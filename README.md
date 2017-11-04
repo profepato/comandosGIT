@@ -9,11 +9,16 @@ git config --global user.name "nombre_de_usuario"
 
 ## Configuración de proxy
 ```
-git config --global http.proxy 192.168.241.14:8080 
+git config --global http.proxy 192.168.241.14:8080
+git config --global https.proxy 192.168.241.14:8080 
+```
+
+## Desactivar el proxy
+```
 git config --global --unset http.proxy
 ```
 
-## No colocar siepre las credenciales de github
+## No colocar siempre las credenciales de github
 ```
 git config --global credential.helper 'cache --timeout=864000'
 ```
@@ -25,26 +30,29 @@ git remote -v			// Ve los repositorios remotos
 git remote remove origin	// Quita el repositorio remoto
 ```
 ## Comandos varios
-
-`git clone url`				      Baja el proyecto de la nube <br>
-`git status` 					      Ver el estado <br>
-`git add .` 					      Añado todo cuando hago cambios <br>
-`git commit -m "mensaje"` 	Sube local <br>
-`git push` 					        Envía a online <br>
-`git pull` 					        Baja de online <br>
-`git log`						        Ve todos los commits <br>
-`git log --pretty=oneline`	Ve todos los commits por linea solo con IDS <br>
-`git log --pretty=format:"%h - %an, %ar : %s"` <br>
-`git checkout ID_COMMIT`		Vuelve al estado del ID_COMMIT <br>
+```
+git clone url                                 // Baja el proyecto de la nube
+git status                                    // Ver el estado
+git add .                                     // Añado todo cuando hago cambios
+git commit -m "mensaje"                       // Sube local
+git push                                      // Envía a online
+git pull                                      // Baja de online
+git log                                       // Ve todos los commits
+git log --pretty=oneline                      // Ve todos los commits por linea solo con IDS
+git log --pretty=format:"%h - %an, %ar : %s"
+git checkout ID_COMMIT`                       // Vuelve al estado del ID_COMMIT
+```
 INVESTIGAR amend para cambiar el mensaje de los commit
 
 ## Ramas
-`git branch nombre`			        Crea una nueva rama<br>
-`git checkout nombreBranch`	    Cambio a esa rama<br>
-`git checkout master`			      Vuelve al mas actual<br>
-`git add .`					            Añadiendo antes de subir<br>
-`git push origin nombreBranch`	Subiendo a GIT HUB<br>
-`git branch -D NOMBRE_RAMA`		  Eliminar una rama<br>
+```
+git branch nombre               // Crea una nueva rama
+git checkout nombreBranch       // Cambio a esa rama
+git checkout master             // Vuelve al mas actual
+git add .                       // Añadiendo antes de subir
+git push origin nombreBranch    // Subiendo a GIT HUB
+git branch -D NOMBRE_RAMA       // Eliminar una rama
+```
 
 ### Mezclar rama master con una rama
 ```
@@ -67,12 +75,12 @@ git branch --no-merged
 
 # Tags
 Los tags no se suben con los push
-
-`git tag -a v0.1 -m "Mensaje de versión"`			        se le asigna al último commit<br>
-`git tag -a v0.1 -m "Mensaje de versión"	SHA_COMMIT`	Tag a un commit en específico<br>
-`git push origin v0.1`
-`git push origin --tags`					                    Sube todos los tags que hemos creado<br>
-
+```
+git tag -a v0.1 -m "Mensaje de versión"             // Se le asigna al último commit
+git tag -a v0.1 -m "Mensaje de versión"	SHA_COMMIT  // Tag a un commit en específico
+git push origin v0.1
+git push origin --tags                              // Sube todos los tags que hemos creado
+```
 
 # Trabajo en equipo
 
