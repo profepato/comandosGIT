@@ -1,4 +1,3 @@
-# Comandos GIT
 ## Página oficial de GIT
 https://git-scm.com/
 
@@ -27,25 +26,25 @@ git remote remove origin	// Quita el repositorio remoto
 ```
 ## Comandos varios
 
-`git clone url`				// Baja el proyecto de la nube
-`git status` 					// ver el estado
-`git add .` 					// añado todo cuando hago cambios
-`git commit -m "mensaje"` 	// sube local
-`git push` 					// envia a online
-`git pull` 					// baja de online
-`git log`						// Ve todos los commits
-`git log --pretty=oneline`	// Ve todos los commits por linea solo con IDS
-`git log --pretty=format:"%h - %an, %ar : %s"`
-`git checkout ID_COMMIT`		// vuelve al estado del idCommit
+`git clone url`				      Baja el proyecto de la nube <br>
+`git status` 					      Ver el estado <br>
+`git add .` 					      Añado todo cuando hago cambios <br>
+`git commit -m "mensaje"` 	Sube local <br>
+`git push` 					        Envía a online <br>
+`git pull` 					        Baja de online <br>
+`git log`						        Ve todos los commits <br>
+`git log --pretty=oneline`	Ve todos los commits por linea solo con IDS <br>
+`git log --pretty=format:"%h - %an, %ar : %s"` <br>
+`git checkout ID_COMMIT`		Vuelve al estado del ID_COMMIT <br>
 INVESTIGAR amend para cambiar el mensaje de los commit
 
 ## Ramas
-`git branch nombre`			// crea una nueva rama
-`git checkout nombreBranch`	// cambio a esa rama
-`git checkout master`			// vuelve al mas actual
-`git add .`					// añadiendo antes de subir
-`git push origin nombreBranch`		// Subiendo a GIT HUB
-`git branch -D NOMBRE_RAMA`		// Eliminar una rama
+`git branch nombre`			        Crea una nueva rama<br>
+`git checkout nombreBranch`	    Cambio a esa rama<br>
+`git checkout master`			      Vuelve al mas actual<br>
+`git add .`					            Añadiendo antes de subir<br>
+`git push origin nombreBranch`	Subiendo a GIT HUB<br>
+`git branch -D NOMBRE_RAMA`		  Eliminar una rama<br>
 
 ### Mezclar rama master con una rama
 ```
@@ -69,10 +68,10 @@ git branch --no-merged
 # Tags
 Los tags no se suben con los push
 
-`git tag -a v0.1 -m "Mensaje de versión"`			// se le asigna al Ãºltimo commit
-`git tag -a v0.1 -m "Mensaje de versión"	SHA_COMMIT`	// Tag a un commit en especÃ­fico
+`git tag -a v0.1 -m "Mensaje de versión"`			        se le asigna al último commit<br>
+`git tag -a v0.1 -m "Mensaje de versión"	SHA_COMMIT`	Tag a un commit en específico<br>
 `git push origin v0.1`
-`git push origin --tags`					// SUBE TODOS LOS TAGS QUE HEMOS CREADO
+`git push origin --tags`					                    Sube todos los tags que hemos creado<br>
 
 
 # Trabajo en equipo
