@@ -1,6 +1,12 @@
 ## Página oficial de GIT
 https://git-scm.com/
 
+## Libro oficial PRO GIT en Español
+https://git-scm.com/book/es/v2
+
+## Repositorio del libro PRO GIT en Español
+https://github.com/progit/progit2-es
+
 ## Configuración inicial
 ```
 git config --global user.email "tu_correo@correo.com"
