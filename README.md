@@ -7,6 +7,11 @@ git config --global user.email "tu_correo@correo.com"
 git config --global user.name "nombre_de_usuario"
 ```
 
+## Ver una lista de configuraciones
+```
+git config --list
+```
+
 ## Configuración de proxy
 ```
 git config --global http.proxy 192.168.241.14:8080
@@ -89,4 +94,9 @@ Para cuando se trabaja en equipo, y existen cambios y hay que verificar si exist
 git fetch origin
 git merge origin/master
 git push origin/master
+```
+
+## Colores en terminal
+```
+git config --global color.ui true
 ```
