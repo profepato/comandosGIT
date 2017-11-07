@@ -97,9 +97,21 @@ git push origin --tags                              // Sube todos los tags que h
 
 Para cuando se trabaja en equipo, y existen cambios y hay que verificar si existe algun cambio
 ```
-git fetch origin
-git merge origin/master
-git push origin/master
+git add .
+git commit -m "Cambios propios"
+git pull                // Se descargan y se mezclan los archivos
+```
+Si existen mezclas con conflicto, se deberán solucionar
+
+```
+git add .
+git commit -m "Mezclando"
+git pull
+```
+Este procese se hace mientras hayan cambios online.
+Una vez que ya no hayan cambios online:
+```
+git push
 ```
 
 ## Colores en terminal
