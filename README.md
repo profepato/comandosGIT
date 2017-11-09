@@ -34,6 +34,11 @@ git config --global --unset http.proxy
 git config --global credential.helper 'cache --timeout=864000'
 ```
 
+## Inicializar un repositorio local
+```
+git init
+```
+
 ## Conectar tu repositorio local con uno remoto
 ```
 git remote add origin URL	// Conectar
